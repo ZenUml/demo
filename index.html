@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Vue Sequence Demo</title>
+  </head>
+  <body>
+    <div id="diagram">
+      <seq-diagram :code="code"></seq-diagram>
+    </div>
+    <script src="./dist/bundle.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#diagram',
+        data: { code: 'C1.methodA()' }
+      })
+    </script>
+  </body>
+</html>
