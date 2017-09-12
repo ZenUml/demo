@@ -121,6 +121,7 @@ __package.json__
 Now, let's run the application:
 
 ```bash
+npm run install
 npm run start
 ```
 
