@@ -1,6 +1,20 @@
 import Vue from 'vue'
-import 'vue-sequence/dist/main.css'
-import VueSequence from 'vue-sequence'
+import Vuex from 'vuex'
 
-Vue.component('seq-diagram', VueSequence.SeqDiagram)
-window.Vue = Vue
+import {SeqDiagram, Store} from 'vue-sequence'
+import 'vue-sequence/dist/vue-sequence.css'
+
+Vue.use(Vuex)
+Vue.component('seq-diagram', SeqDiagram)
+
+Vue.config.productionTip = false
+
+const store = new Vuex.Store(Store)
+
+/* eslint-disable */
+window.app = new Vue({
+    el: '#diagram',
+    store
+})
+store.commit('code', 'A.methodA() { b = B.methodB() { A.methodA() } }')
+

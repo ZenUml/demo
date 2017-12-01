@@ -45,13 +45,6 @@ __index.html__
     <div id="diagram">
       <seq-diagram :code="code"></seq-diagram>
     </div>
-    <script src="./dist/bundle.js"></script>
-    <script>
-      var app = new Vue({
-        el: '#diagram',
-        data: { code: 'C1.methodA()' }
-      })
-    </script>
   </body>
 </html>
 
@@ -122,6 +115,7 @@ Now, let's run the application:
 
 ```bash
 npm run install
+webpack
 npm run start
 ```
 
