@@ -113,10 +113,19 @@ __package.json__
 
 Now, let's run the application:
 
+For development
+
 ```bash
 npm run install
 webpack
 npm run start
 ```
+
+Test for deployment (deploy the dist folder)
+````bash
+webpack
+http-server dist
+````
+
 
 
