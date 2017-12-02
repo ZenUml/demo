@@ -3235,15 +3235,15 @@ send@0.16.1:
     range-parser "~1.2.0"
     statuses "~1.3.1"
 
-sequence-parser@0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.3.6.tgz#13a6f7884840f66e894bd9d1d72a5a8ea9315466"
-  dependencies:
-    antlr4 "^4.7.0"
-
 sequence-parser@^0.3.8:
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.3.8.tgz#514581859a3bec489387cf81a9e938a834823f44"
+  dependencies:
+    antlr4 "^4.7.0"
+
+sequence-parser@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.4.0.tgz#7d5f14144fbfc7918315ca4a79a3db6755316ff0"
   dependencies:
     antlr4 "^4.7.0"
 
@@ -3747,12 +3747,12 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-sequence@^0.3.13:
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.3.13.tgz#b9bb66ac8f59cd3c3487a22289e7140d452740c6"
+vue-sequence@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vue-sequence/-/vue-sequence-0.4.0.tgz#0effcde5a07e2cb3d104e4c0b203f17c09d46bcf"
   dependencies:
     karma-chrome-launcher "^2.2.0"
-    sequence-parser "0.3.6"
+    sequence-parser "^0.4.0"
     vue "^2.3.3"
     vuex "^2.4.0"
 

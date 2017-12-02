@@ -18,9 +18,9 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "sequence-parser": "^0.3.8",
+    "sequence-parser": "^0.4.0",
     "vue": "^2.3.3",
-    "vue-sequence": "^0.3.13",
+    "vue-sequence": "^0.4.0",
     "vuex": "^3.0.1"
   }
 }

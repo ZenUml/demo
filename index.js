@@ -16,5 +16,5 @@ window.app = new Vue({
     el: '#diagram',
     store
 })
-store.commit('code', 'A.methodA() { b = B.methodB() { A.methodA() } }')
+store.commit('code', 'a = A.methodA()')
 
