@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Split from 'split.js'
 
 import {SeqDiagram, Store} from 'vue-sequence'
 import 'vue-sequence/dist/vue-sequence.css'
@@ -17,4 +18,5 @@ window.app = new Vue({
     store
 })
 store.commit('code', 'a = A.methodA()')
+Split(['#editor', '#diagram'], { sizes: [25, 75] })
 

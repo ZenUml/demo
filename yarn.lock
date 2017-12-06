@@ -3235,12 +3235,6 @@ send@0.16.1:
     range-parser "~1.2.0"
     statuses "~1.3.1"
 
-sequence-parser@^0.3.8:
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.3.8.tgz#514581859a3bec489387cf81a9e938a834823f44"
-  dependencies:
-    antlr4 "^4.7.0"
-
 sequence-parser@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/sequence-parser/-/sequence-parser-0.4.0.tgz#7d5f14144fbfc7918315ca4a79a3db6755316ff0"
@@ -3387,6 +3381,10 @@ spdy@^3.4.1:
     safe-buffer "^5.0.1"
     select-hose "^2.0.0"
     spdy-transport "^2.0.18"
+
+split.js@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/split.js/-/split.js-1.3.5.tgz#62e2ce66d2cf91cc774aa5f0749ff25138039f50"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
