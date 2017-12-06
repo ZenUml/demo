@@ -22,7 +22,7 @@
         float: left;
       }
       .split, .gutter.gutter-horizontal {
-        height: 300px;
+        height: 100%;
       }
       .split {
         overflow-y: auto;
@@ -35,9 +35,9 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div id="workspace" class="container">
       <div id="editor" class="split">
-        <textarea id="code" cols="50" rows="50" onkeyup="render()"></textarea>
+        <editor></editor>
       </div>
       <div id="diagram" class="split">
         <seq-diagram></seq-diagram>

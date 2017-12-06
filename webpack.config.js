@@ -1,4 +1,5 @@
 const path = require('path');
+var vueLoaderConfig = require('./vue-loader.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -12,9 +13,9 @@ module.exports = {
     contentBase: '.',
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.vue'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
     },
   },
   module: {
@@ -22,7 +23,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
-      }
+      },
+        {
+            test: /\.vue$/,
+            loader: "vue-loader",
+            options: vueLoaderConfig
+        }
     ]
   },
     plugins: [
