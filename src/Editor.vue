@@ -19,7 +19,6 @@
         name: 'editor',
         data () {
             return {
-                code: 'const a = 10',
                 editorOptions: {
                     // codemirror options
                     tabSize: 4,
@@ -60,6 +59,9 @@
         computed: {
             editor() {
                 return this.$refs.myEditor.Editor
+            },
+            code() {
+                return this.$store.getters.code
             }
         },
         mounted() {
