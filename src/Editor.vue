@@ -1,7 +1,7 @@
 <template>
 
     <!-- or to manually control the datasynchronization（或者手动控制数据流，需要像这样手动监听changed事件） -->
-    <codemirror v-model="code"
+    <codemirror
                 :code="code"
                 :options="editorOptions"
                 @ready="onEditorReady"
@@ -52,7 +52,6 @@
             },
             onEditorCodeChange(newCode) {
                 console.log('this is new code', newCode)
-                this.code = newCode
                 this.$store.dispatch('updateCode', { code: newCode })
             }
         },
