@@ -23,7 +23,7 @@
                     // codemirror options
                     tabSize: 4,
                     mode: 'text/javascript',
-                    theme: 'base16-dark',
+                    theme: 'base16-light',
                     lineNumbers: true,
                     line: true,
 
