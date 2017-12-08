@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueCodeMirror from 'vue-codemirror'
-import { codemirror } from 'vue-codemirror'
 import Split from 'split.js'
 
 import {SeqDiagram, Store} from 'vue-sequence'
@@ -24,6 +23,4 @@ window.app = new Vue({
     el: '#workspace',
     store
 })
-store.commit('code', 'a = A.methodA()')
-Split(['#editor', '#diagram'], { sizes: [25, 75] })
-
+window.Split = Split

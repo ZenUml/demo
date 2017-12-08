@@ -46,9 +46,12 @@
     </div>
     <script>
         function render() {
-            var code = document.getElementById("code").value
-            app.$store.commit('code', code)
+            Split(['#editor', '#diagram'], { sizes: [25, 75] })
         }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            render()
+        });
     </script>
 
   </body>

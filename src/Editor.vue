@@ -69,3 +69,8 @@
         }
     }
 </script>
+<style>
+    .CodeMirror {
+        height: 100%;
+    }
+</style>
