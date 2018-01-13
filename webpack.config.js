@@ -3,10 +3,13 @@ var vueLoaderConfig = require('./vue-loader.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './index.js',
+  entry: {
+    index: './index.js',
+    view: './view.js'
+  },
   node: { fs: 'empty' },
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -35,11 +38,18 @@ module.exports = {
 
         // https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'index.html',
-            inject: true
-        })
-    ]
+          filename: 'index.html',
+          template: 'index.html',
+          chunks: ['index'],
+          inject: true
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'view.html',
+        template: 'view.html',
+        chunks: ['view'],
+        inject: true
+    })
+]
 
 };
 
