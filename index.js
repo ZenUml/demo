@@ -24,3 +24,7 @@ window.app = new Vue({
     store
 })
 window.Split = Split
+
+if(window.onAppLoaded) {
+  window.onAppLoaded();
+}
